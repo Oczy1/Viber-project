@@ -4,3 +4,547 @@
 @import "formul";
 @import "footer";
 
+.page {
+}
+.content-x1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(235, 235, 235, 1);
+    position: relative;
+    padding: 100px 0px 40px 0px;
+    &__container {
+    }
+}
+.greeting {
+    img {
+        width: 760px;
+        pointer-events: none;
+        z-index: 1;
+        @media (max-width: $md2) {
+            width: 100%;
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__title {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 158px;
+            height: 167px;
+            margin: 0px 0px 20px 0px;
+        }
+        h1 {
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 77px;
+            letter-spacing: -0.005em;
+            color: #5f6368;
+            margin: 0px 0px 60px 0px;
+        }
+    }
+    &__memo {
+        z-index: 1;
+        max-width: 487px;
+    }
+    &__btn {
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: center;
+        padding: 20px 60px;
+        gap: 10px;
+        color: #ffffff;
+        background: rgba(144, 105, 174, 1);
+        border-radius: 50px;
+        transition: all 0.7s ease 0s;
+        margin: 0px 0px 20px 0px;
+        @media (max-width: $md1) {
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+        &::before {
+            font-size: 24px;
+            line-height: 29px;
+            color: #ffffff;
+            padding: 0px 20px 0px 0px;
+            transition: all 0.7s ease 0s;
+            @media (max-width: $md1) {
+                font-size: 2em;
+                padding: 0px 10px 0px 0px;
+            }
+        }
+        &:hover::before {
+            color: rgba(49, 49, 49, 1);
+        }
+        &:hover {
+            background: rgba(255, 255, 255, 0.8);
+            color: rgba(49, 49, 49, 1);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        span {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            @media (max-width: $md1) {
+                font-size: 1.5em;
+                padding: 0px 10px 0px 0px;
+            }
+        }
+    }
+}
+
+.content-x2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 40px 0px 220px 0px;
+    background: rgba(255, 255, 255, 1);
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        h2 {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+            letter-spacing: -0.005em;
+            color: #473355;
+        }
+        margin: 0px 0px 80px 0px;
+    }
+}
+.content-x3 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 100px 0px;
+    position: relative;
+    background: rgba(187, 136, 226, 1);
+    &__container {
+    }
+}
+.greeting-images {
+}
+.memo__title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    margin: 0px 0px 13px 0px;
+    text-align: center;
+    color: #595959;
+}
+.memo-item {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    margin: 0px 0px 43px 0px;
+    color: #595959;
+}
+.memo-image {
+}
+.column-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $md2) {
+        flex-direction: column;
+    }
+    &__left {
+        max-width: 700px;
+        margin: 0px 20px 0px 0px;
+        @media (max-width: $md2) {
+            text-align: center;
+            margin: 0px 0px 0px 0px;
+        }
+        h5 {
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.005em;
+            color: #000000;
+            margin: 0px 0px 30px 0px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: -0.005em;
+            color: #000000;
+        }
+    }
+    &__right {
+        max-width: 483px;
+        img {
+            pointer-events: none;
+        }
+        @media (max-width: $md2) {
+            width: 100%;
+            margin: 20px 0px 0px 0px;
+        }
+    }
+}
+.column-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $md2) {
+        flex-direction: column;
+    }
+    &__left {
+        max-width: 483px;
+        margin: 0px 20px 0px 0px;
+        img {
+            pointer-events: none;
+        }
+        @media (max-width: $md2) {
+            width: 100%;
+            margin: 0px 0px 0px 0px;
+        }
+    }
+    &__right {
+        max-width: 700px;
+        @media (max-width: $md2) {
+            text-align: center;
+        }
+        h5 {
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.005em;
+            margin: 0px 0px 30px 0px;
+            color: #000000;
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: -0.005em;
+            color: #000000;
+        }
+    }
+}
+
+.content-x1-img-elips {
+    &:nth-child(1) {
+        width: 1250px;
+        height: 818px;
+        background: url(../img/viber-big-elipse-top-9585040.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 0%;
+    }
+    &:nth-child(2) {
+        width: 214px;
+        height: 214px;
+        background: url(../img/viber-small-elipse-top-9fd9090040.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+    }
+    &:nth-child(3) {
+        width: 124px;
+        height: 124px;
+        background: url(../img/viber-small-elipse-top-9fd9090040.png);
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 35%;
+        left: 10%;
+    }
+    &:nth-child(4) {
+        width: 124px;
+        height: 124px;
+        background: url(../img/viber-small-elipse-top-9fd9090040.png);
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 65%;
+        left: 20%;
+    }
+    &:nth-child(5) {
+        width: 124px;
+        height: 124px;
+        background: url(../img/viber-small-elipse-top-9fd9090040.png);
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    &:nth-child(6) {
+        width: 214px;
+        height: 214px;
+        background: url(../img/viber-small-elipse-top-9fd9090040.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 60%;
+        right: 20%;
+    }
+}
+
+.content-x3-images {
+    &:nth-child(1) {
+        width: 982px;
+        height: 880px;
+        background: url(../img/viber-elipse-bottom-top-9f90843908980040.png);
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: -9%;
+        top: -30%;
+    }
+    &:nth-child(2) {
+        width: 970px;
+        height: 988px;
+        background: url(../img/viber-elipse-bottom-botto-9f56456565480040.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: -10%;
+        top: 30%;
+    }
+}
+.column {
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: $md2) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.column-left {
+    max-width: 400px;
+    z-index: 1;
+    &__title {
+        h2 {
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 77px;
+            letter-spacing: -0.005em;
+            margin: 0px 0px 40px 0px;
+            color: #ffffff;
+        }
+    }
+    &__btn {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: center;
+        padding: 20px 60px;
+        gap: 10px;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(101, 73, 122, 1);
+        border-radius: 50px;
+        transition: all 0.7s ease 0s;
+        margin: 0px 0px 20px 0px;
+        @media (max-width: $md1) {
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+        &::before {
+            font-size: 24px;
+            line-height: 29px;
+            color: rgba(255, 255, 255, 1);
+            padding: 0px 20px 0px 0px;
+            transition: all 0.7s ease 0s;
+            @media (max-width: $md1) {
+                font-size: 2em;
+                padding: 0px 10px 0px 0px;
+            }
+        }
+        &:hover::before {
+            color: rgba(49, 49, 49, 1);
+        }
+        &:hover {
+            background: rgba(255, 255, 255, 0.8);
+            color: rgba(49, 49, 49, 1);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        span {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            @media (max-width: $md1) {
+                font-size: 1.5em;
+                padding: 0px 10px 0px 0px;
+            }
+        }
+    }
+}
+.column-right {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    margin: 320px 0px 80px 0px;
+    &__title {
+        h3 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            color: #ffffff;
+            margin: 0px 0px 20px 0px;
+        }
+    }
+    &__block {
+        max-width: 400px;
+        background: #ffffff;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px 40px;
+        margin: 0px 0px 20px 0px;
+    }
+}
+.block {
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #9069ae;
+        margin: 0px 0px 20px 0px;
+    }
+    &__txt {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #9069ae;
+    }
+}
+.title-block {
+}
+.txt-block {
+}
+
+.content-x2-column {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @media (max-width: $md2){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.left-content {
+    max-width: 400px;
+}
+.point {
+    margin: 0px 0px 30px 0px;
+    &:last-child {
+        margin: 0px 0px 0px 0px;
+    }
+}
+.left-item {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-end;
+    // margin: 0px 0px 30px 0px;
+    // &:last-child {
+    //     margin: 0px 0px 0px 0px;
+    // }
+    &__icon {
+        font-size: 40px;
+        margin: 0px 0px 5px 0px;
+        text-align: right;
+        &::before {
+            color: rgba(49, 36, 60, 1);
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #473355;
+        text-align: right;
+    }
+    &__txt {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+        color: #6d6d6d;
+    }
+}
+.center-content {
+    max-width: 300px;
+    &__wrapper {
+        width: 288px;
+        height: 558px;
+        background: url(../img/viber-telephone-bg-904358945309.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+    }
+}
+.right-content {
+    max-width: 400px;
+}
+.right-item {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // margin: 0px 0px 30px 0px;
+    // &:last-child {
+    //     margin: 0px 0px 0px 0px;
+    // }
+    &__icon {
+        font-size: 40px;
+        margin: 0px 0px 5px 0px;
+        text-align: left;
+        &::before {
+            color: rgba(49, 36, 60, 1);
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #473355;
+        text-align: left;
+    }
+    &__txt {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+        color: #6d6d6d;
+    }
+}
+.video-featured {
+    width: 288px;
+    height: 558px;
+}
